@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Load CIK codes from the Excel spreadsheet
-# Replace 'your_spreadsheet.xlsx' with the actual file path
-df = pd.read_excel('your_spreadsheet.xlsx', sheet_name='Sheet1')  # Adjust sheet name if needed
+
+df = pd.read_excel('Management_Sample.xlsx', sheet_name='Sheet1')  
 
 # Extract CIK codes from the 'CIK' column in the spreadsheet
 cik_codes = df['CIK'].tolist()
